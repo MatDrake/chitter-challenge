@@ -7,6 +7,7 @@ gem 'capybara'
 gem 'sinatra'
 gem 'selenium-webdriver'
 gem 'database_cleaner'
+gem 'bcrypt'
 
 group :test do
   gem 'rspec'
