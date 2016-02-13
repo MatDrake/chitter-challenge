@@ -4,10 +4,10 @@ class User
   include DataMapper::Resource
 
   property :id, Serial
-  property :email, String
+  property :email, String, required: true, unique: true
   property :password_digest, Text
-  property :name, String
-  property :username, String
+  property :name, String, required: true
+  property :username, String, required: true, unique: true
 
   def password=(password)
     @password=password
